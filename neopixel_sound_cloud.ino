@@ -41,43 +41,24 @@ void lightning_flash(int lvl){
     switch(r){
       case 0:
         pixels.setPixelColor(i, 255, 255, 255); // White
+        pixels2.setPixelColor(i, 255, 255, 255); // White
         break;
       case 1:
         pixels.setPixelColor(i, 0, 255, 255); // Purple
+        pixels2.setPixelColor(i, 0, 255, 255); // Purple
         break;
       case 2:
         pixels.setPixelColor(i, 0, 0, 255); // Blue
+        pixels2.setPixelColor(i, 0, 0, 255); // Blue
         break;
       case 3:
         //pixels.setPixelColor(i, 255, 255, 0); // Yellow
         //pixels.setPixelColor(i, 255, 0, 0); // Green
         pixels.setPixelColor(i, 255, 0, 255); // Cyan
-        break;
-      case 4:
-        pixels.setPixelColor(i, 0, 255, 0); // Red
-        break;
-    }
-  }
-  
-  r = random(0, 4);
-  for(int i=0; i<lvl; i++){
-    // GRB
-    switch(r){
-      case 0:
-        pixels2.setPixelColor(i, 255, 255, 255); // White
-        break;
-      case 1:
-        pixels2.setPixelColor(i, 0, 255, 255); // Purple
-        break;
-      case 2:
-        pixels2.setPixelColor(i, 0, 0, 255); // Blue
-        break;
-      case 3:
-        //pixels2.setPixelColor(i, 255, 255, 0); // Yellow
-        //pixels2.setPixelColor(i, 255, 0, 0); // Green
         pixels2.setPixelColor(i, 255, 0, 255); // Cyan
         break;
       case 4:
+        pixels.setPixelColor(i, 0, 255, 0); // Red
         pixels2.setPixelColor(i, 0, 255, 0); // Red
         break;
     }
